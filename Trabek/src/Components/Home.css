@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', 'Arial', sans-serif; /* Arabic-friendly font */
+    direction: rtl;
+  }
+  
+  .Home-Wrapper {
+    background-color: #f5f5f5;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .Home-Container {
+    display: flex;
+    flex-direction: row-reverse; 
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .Left-Side {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    margin-right: 180px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .Left-Side .title {
+    color: #5D8736;
+    font-size: 40px;
+    font-weight: 700;
+    margin-right:50px ;
+    margin-top: 50px;
+  }
+  
+  .Hand {
+    width: 100%;
+    max-width: 400px;
+    object-fit: contain;
+    margin-right: 30px;
+    
+  }
+  
+  .Description {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.8;
+    width: 60%;
+    margin-right: 70px;
+  }
+  .Description2 {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.8;
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  
+  /* Right Side Styles */
+  .right-side {
+    position: relative; /* Required for absolute positioning */
+    padding: 40px; /* Keep your existing padding */
+  }
+  
+  .TrabekLogo { /* Target TrabekLogo */
+    position: absolute;
+    top: 30px; /* Adjust distance from top */
+    right: 50px; /* Adjust distance from right */
+    width: 150px; /* Maintain your desired size */
+    margin: 0; /* Remove any default margins */
+  }
+  
+  .Info-Container {
+    width: 100%;
+    max-width: 550px;
+    background-color: #F4FFC3;
+    padding: 80px;
+    margin-top: 150px;
+    
+  }
+  
+  .Info-Container .title {
+    color: #5D8736;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .Info-Container .Description {
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    direction: rtl;
+    background-color: #A9C46C;
+  }
+  
+  .input::placeholder {
+    color: #000;
+  }
+  
+  .right-side img:last-child { /* FaceId */
+    display: block;
+    width: 40px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+  }
+  
+  .button {
+    width: 50%;
+    padding: 14px;
+    background-color: #5D8736;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #3a7a4a;
+  }
+  
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+  .Left-Side {
+    margin-right: 0;
+  }
+  
+  .Description, .Description2 {
+    width: 80%;
+    margin-right: 0;
+  }
+  
+  .Info-Container {
+    padding: 60px;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home-Container {
+    flex-direction: column;
+  }
+  
+  .Left-Side {
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .Left-Side .title {
+    margin-right: 0;
+    font-size: 32px;
+  }
+  
+  .Description, .Description2 {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  
+  .right-side {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .TrabekLogo {
+    position: static;
+    margin-bottom: 20px;
+  }
+  
+  .Info-Container {
+    margin-top: 30px;
+    padding: 40px;
+    width: 90%;
+  }
+  
+  .button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Home-Wrapper {
+    padding: 10px;
+  }
+  
+  .Left-Side .title {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  
+  .Description, .Description2 {
+    font-size: 16px;
+  }
+  
+  .Info-Container {
+    padding: 30px;
+  }
+  
+  .Info-Container .title {
+    font-size: 20px;
+  }
+  
+  .input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .TrabekLogo {
+    width: 120px;
+  }
+}

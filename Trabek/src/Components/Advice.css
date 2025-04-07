@@ -1,0 +1,141 @@
+.advice-wrapper{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+.Advice-container{
+  display: flex;
+flex-direction: row;
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+overflow: hidden;
+max-width: 900px;
+width: 100%;
+}
+.RightSide3{
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: start;
+}
+.title3{
+  font-size: 25px;
+  color: #5D8736;
+  right: 0;
+  margin-bottom: 15px;
+  margin-top: 35px;
+}
+.current-crop{
+background-color: #5D8736;
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 100%;
+cursor: pointer;
+}
+.LeftSide3{
+padding: 40px; 
+flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.TrabekLogo3{
+position: absolute;
+  top: 30px; /* Adjust distance from top */
+  right: 50px; /* Adjust distance from right */
+  width: 150px; /* Maintain your desired size */
+  margin: 0; 
+}
+.button3{
+width: 50%;
+padding: 14px;
+background-color: #5D8736;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .Advice-container {
+    flex-direction: column;
+  }
+  
+  .TrabekLogo3 {
+    position: static;
+    margin-bottom: 20px;
+    align-self: flex-end;
+  }
+  
+  .LeftSide3 {
+    order: -1;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .advice-wrapper {
+    padding: 1rem;
+  }
+  
+  .RightSide3, .LeftSide3 {
+    padding: 1.5rem;
+  }
+  
+  .title3 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  
+  .button3 {
+    width: 70%;
+  }
+  
+  select {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .title3 {
+    font-size: 20px;
+  }
+  
+  .TrabekLogo3 {
+    width: 120px; 
+    position: absolute;
+    
+
+  }
+  
+  .button3 {
+    width: 100%;
+    padding: 12px;
+  font-size: 14px;
+  }
+  
+  .RightSide3, .LeftSide3 {
+    padding: 1rem;
+  }
+  
+  .current-crop {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
